@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>snacks app</title>
+</head>
+<body>
+    
+    <h1> welcome to snack project :) </h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home Page</a></li>
+            <li><a href="{% url 'about' %}">About Us Page</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block main %}
+        {% endblock main %} 
+    </main>
+    <footer>
+        &copy;all copyright reserved 2021
+    </footer>
+</body>
+
+</html>
